@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  BDWRDataDemo
+//
+//  Created by 冰点 on 16/3/16.
+//  Copyright © 2016年 冰点. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "BDPublicMacros.h"
+#import "NSDate+BDAddition.h"
+
+struct BDSTime {//日期时间结构体
+    int16_t year;
+    int16_t month;
+    int16_t day;
+    int16_t hour;
+    int16_t min;
+    int16_t sec;
+};
+typedef struct BDSTime BDSTime;
+
+
+#endif /* PrefixHeader_pch */
